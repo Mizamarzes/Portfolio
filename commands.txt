@@ -1,8 +1,24 @@
-
 -- START DE SERVER
 npm run dev
 
-
 -- SKETHFAB
-
 -- DAE Crib
+
+-- THINGS FOR INSTALL 
+
+npm install
+npm install -D tailwindcss postcss autoprefixer
+npm install react-router-dom
+npm install @react-three/fiber
+npm install @react-three/drei
+npm install @react-spring/three
+npm install @emailjs/browser
+
+-- EXTENSIONS
+
+tailwindcss
+ES7+ React
+
+
+1:32:36 
+2:04:12 
