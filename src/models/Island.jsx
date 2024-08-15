@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/foxs-islands-163b68e09fcc47618450150be77
 Title: Fox's islands
 */
 
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { useFrame, useThree } from '@react-three/fiber';
 import { a } from '@react-spring/three';
@@ -17,7 +17,7 @@ const Island = (props) => {
   const islandRef = useRef();
 
   const { nodes, materials } = useGLTF(islandScene)
-  
+
   return (
     <a.group ref={islandRef} {...props}>
       <mesh
@@ -49,7 +49,7 @@ const Island = (props) => {
         material={materials.PaletteMaterial001}
       />
     </a.group>
-  )
+  );
 }
 
 export default Island;
