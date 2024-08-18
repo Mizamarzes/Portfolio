@@ -4,19 +4,31 @@ import 'react-vertical-timeline-component/style.min.css';
 import { skills, experiences } from '../constants';
 import CTA from '../components/CTA';
 
+import profilePhoto from '../assets/images/profile_photo.png';
+
 const About = () => {
   return (
     <section className='max-container'>
       <h1 className='head-text'>
-        Hola, I'm <span className='blue-gradient_text font-semibold drop-shadow-sm'>
+        Hola, Soy <span className='blue-gradient_text font-semibold drop-shadow-sm'>
         Juan Contreras</span>
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>
-        Backend Junior Developer based in Colombia
-        </p>
-      </div>
+      <div className="mt-5 flex flex-col lg:flex-row items-center gap-5 text-slate-500">
+        <div className="flex-1">
+          <p>
+          Mi objetivo es resolver problemas y agilizar procesos con tecnología, mejorar mis habilidades y 
+          obtener mi título en ingeniería de software con especialización en inteligencia artificial. 
+          Aspiro a ayudar a mi familia, formar mi propio negocio, y ofrecer soluciones rápidas a través de 
+          aplicaciones web que mejoren la vida diaria. Quiero crecer como desarrollador senior y perfeccionar 
+          mis habilidades para ofrecer soluciones claras y efectivas.
+          </p>
+        </div>
+
+        <div className="flex justify-center items-center flex-1">
+          <img src={ profilePhoto } alt="My Image" className="w-full max-w-xs h-auto rounded-full object-cover" />
+        </div>
+    </div>
 
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text'>My Skills</h3>
@@ -40,12 +52,7 @@ const About = () => {
 
       <div className='py-16'>
           <h3 className='subhead-text'>Work Experience</h3>
-          <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-            <p>
-            Backend Junior Developer based in Colombia
-            </p>
-          </div>
-
+        
           <div className='mt-12 flex'>
             <VerticalTimeline>
               {experiences.map((experience) => (

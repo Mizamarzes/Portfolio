@@ -16,33 +16,33 @@ const renderContent = {
     1: (
         <h1 className="sm:text-xl sm:leading-snug text-center
         neo-brutalism-blue py-4 px-8 text-white mx-5">
-            Hi, I am <span className='font-semibold'>Juan Contreras</span>
+            Hola, Soy <span className='font-semibold'>Juan Contreras</span>
             <br/>
-            A Backend Junior Developer from Colombia
+            Backend Junior Developer de Colombia
         </h1>
     ),
     2: (
         <InfoBox 
-            text="Worked with many companies and picked up many skills
-            along the way"
+            text="¡Te invito a conocer mis habilidades, descubrir mis pasiones 
+            y ver qué me motiva en mi camino profesional!"
             link="/about"
-            btnText="Learn more"
+            btnText="Descubrir mas"
         />
     ),
     3: (
         <InfoBox 
-            text="Led multiple projects to succes over the years. Curious
-            about the impact"
+            text="He trabajado en diversos proyectos en mi camino profesional
+            ¿Te gustaría conocerlos? "
             link="/projects"
-            btnText="Visit my portfolio"
+            btnText="Descubrir mas"
         />
     ),
     4: (
         <InfoBox 
-            text="Need a project done or looking for a dev? I'm just a few
-            keystrokes away"
+            text="¿Estás buscando un desarrollador? 
+            ¡Estoy a solo unos clics de distancia!"
             link="/contact"
-            btnText="Let's talk"
+            btnText="Contactame"
         />
     ),
 }

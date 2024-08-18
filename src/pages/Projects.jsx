@@ -11,12 +11,6 @@ const Projects = () => {
         Projects</span>
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>
-        Backend Junior Developer based in Colombia
-        </p>
-      </div>
-
       <div className='flex flex-wrap my-20 gap-16'>
         {projects.map((project) => (
           <div className="lg:w-[400px] w-full" key={project.name}>

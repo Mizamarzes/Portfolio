@@ -9,10 +9,11 @@ import Plane from '../models/Plane';
 import HomeInfo from '../components/HomeInfo';
 
 import sakura from '../assets/sakura.mp3'
+import i_have_no_enemies from '../assets/have_no_enemies.mp3'
 import { soundoff, soundon } from '../assets/icons';
 
 const Home = () => {
-    const audioRef = useRef(new Audio(sakura))
+    const audioRef = useRef(new Audio(i_have_no_enemies))
     audioRef.current.volume = 0.4;
     audioRef.current.loop = true;
     const [isRotating, setIsRotating] = useState(false);

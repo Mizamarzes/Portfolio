@@ -5,11 +5,16 @@ import starbucks from './starbucks.png'
 import tesla from './tesla.png'
 import logo from './logo.svg'
 
+// add for me
+
+import this_dev from './this_dev.png'
+
 export {
     hero,
     meta,
     shopify,
     starbucks,
     tesla,
-    logo
+    logo,
+    this_dev
 }

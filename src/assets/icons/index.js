@@ -27,6 +27,15 @@ import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 
+// added for me
+
+import java from './java.svg'
+import spring from './spring.svg'
+import mysql from './mysql.svg'
+import postgres from './postgres.svg'
+import python from './python.svg'
+import linux from './linux.svg'
+
 export {
     css,
     express,
@@ -55,5 +64,11 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    java,
+    spring,
+    mysql,
+    postgres,
+    python,
+    linux
 }
