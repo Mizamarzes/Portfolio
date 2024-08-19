@@ -8,7 +8,6 @@ import Bird from '../models/Bird';
 import Plane from '../models/Plane';
 import HomeInfo from '../components/HomeInfo';
 
-import sakura from '../assets/sakura.mp3'
 import i_have_no_enemies from '../assets/have_no_enemies.mp3'
 import { soundoff, soundon } from '../assets/icons';
 

@@ -8,7 +8,7 @@ const Projects = () => {
     <section className='max-container'>
       <h1 className='head-text'>
         Mis <span className='blue-gradient_text font-semibold drop-shadow-sm'>
-        Projectos</span>
+        Proyectos</span>
       </h1>
 
       <div className='flex flex-wrap my-20 gap-16'>
@@ -33,21 +33,37 @@ const Projects = () => {
               <p className="mt-2 text-slate-500">
                 {project.description}
               </p>
-              <div className="mt-5 flex items-center gap-2 font-poppins">
-                <Link
-                  to={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-blue-600"
-                >
-                  Live Link
-                </Link>
-                <img 
-                  src={arrow}
-                  alt="arrow"
-                  className="w-4 h-4 object-contain"
-                />
-              </div>
+
+              {/* Verificar si el proyecto tiene un enlace y renderizarlo */}
+              {project.link && (
+                <div className="mt-5 flex items-center gap-2 font-poppins">
+                  <Link
+                    to={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-blue-600"
+                  >
+                    Live Link
+                  </Link>
+                  <img 
+                    src={arrow}
+                    alt="arrow"
+                    className="w-4 h-4 object-contain"
+                  />
+                </div>
+              )}
+
+
+              {/* Añadir el GIF aquí si existe */}
+              {project.gifUrl && (
+                <div className="mt-5 flex justify-center">
+                  <img
+                    src={project.gifUrl} 
+                    alt="Project GIF"
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+              )}
             </div>
           </div>
         ))}

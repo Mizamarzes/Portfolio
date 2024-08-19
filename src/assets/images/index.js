@@ -1,20 +1,9 @@
-import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
-import logo from './logo.svg'
-
-// add for me
-
 import this_dev from './this_dev.png'
+import facialrecogGif from './facialrecog.gif'
+import crmGif from './crm.gif'
 
 export {
-    hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
-    logo,
-    this_dev
+    this_dev,
+    facialrecogGif,
+    crmGif
 }

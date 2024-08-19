@@ -1,24 +1,26 @@
-import { meta, shopify, starbucks, tesla, this_dev } from "../assets/images";
+import { 
+    this_dev,
+    facialrecogGif,
+    crmGif
+} from "../assets/images";
+
 import {
-    car,
-    contact,
     css,
     git,
     github,
     html,
     javascript,
-    linkedin,
-    pricewise,
-    react,
-    snapgram,
-    summiz,
-    threads,
     java,
     spring,
     mysql,
     postgres,
     python,
-    linux
+    linux,
+    crm,
+    facialrecog,
+    plane,
+    university,
+    restaurant
 } from "../assets/icons";
 
 export const skills = [
@@ -95,58 +97,42 @@ export const experiences = [
     },
 ];
 
-export const socialLinks = [
-    {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
-    {
-        name: 'GitHub',
-        iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
-    },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
-    }
-];
-
 export const projects = [
     {
-        iconUrl: pricewise,
+        iconUrl: crm,
         theme: 'btn-back-red',
         name: 'CRM Hooy',
         description: 'Desarrollo de plataforma CRM con funcionalidad de envío masivo de mensajes con Javascript, Java Spring Boot, MySQL y AWS.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        link: '',
+        gifUrl: crmGif,
     },
     {
-        iconUrl: summiz,
-        theme: 'btn-back-green',
+        iconUrl: facialrecog,
+        theme: 'btn-back-blue',
         name: 'Facial Recognition',
         description: 'Plataforma web de reconocimiento facial a través de imágenes potenciado con IA, Python, AWS y Javascript.',
-        link: 'https://github.com/adrianhajdin/threads',
+        link: '',
+        gifUrl: facialrecogGif,
     },
     {
-        iconUrl: car,
-        theme: 'btn-back-blue',
+        iconUrl: plane,
+        theme: 'btn-back-red',
         name: 'Agency Global Flights ',
         description: 'Software de gestion de agencia de vuelos con Java y MySQL.',
         link: 'https://github.com/Mizamarzes/AgencyGlobalFlights',
     },
     {
-        iconUrl: threads,
-        theme: 'btn-back-green',
+        iconUrl: university,
+        theme: 'btn-back-orange',
         name: 'University of the Wise ',
         description: 'Sistema de gestion de una universidad con HTML, CSS y JavaScript.',
-        link: 'https://mizamarzes.github.io/Universidad_proyecto_Javascript/#',
+        link: 'https://github.com/Mizamarzes/Universidad_proyecto_Javascript',
     },
     {
-        iconUrl: snapgram,
+        iconUrl: restaurant,
         theme: 'btn-back-yellow',
         name: '東のドラゴン',
         description: 'Maquetacion de pagina web para restaurante con HTML y CSS.',
-        link: 'https://mizamarzes.github.io/proyectofinal_html.github.io/#seccion-home',
+        link: 'https://github.com/Mizamarzes/proyectofinal_html.github.io',
     }
 ];
