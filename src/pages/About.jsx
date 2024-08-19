@@ -19,11 +19,10 @@ const About = () => {
       <div className="mt-5 flex flex-col lg:flex-row items-center gap-5 text-slate-500">
         <div className="flex-1">
           <p>
-          Mi objetivo es resolver problemas y agilizar procesos con tecnología, mejorar mis habilidades y 
-          obtener mi título en ingeniería de software con especialización en inteligencia artificial. 
-          Aspiro a ayudar a mi familia, formar mi propio negocio, y ofrecer soluciones rápidas a través de 
-          aplicaciones web que mejoren la vida diaria. Quiero crecer como desarrollador senior y perfeccionar 
-          mis habilidades para ofrecer soluciones claras y efectivas.
+          Me apasiona la creación de soluciones innovadoras y cuento con habilidades en gestión, 
+          organización y trabajo en equipo. Mi experiencia en equipos dinámicos ha fortalecido mi 
+          capacidad de comunicación y colaboración. Siempre estoy en busca de nuevas oportunidades para 
+          aprender y crecer, comprometido con la mejora continua y la excelencia profesional.
           </p>
         </div>
 
@@ -31,6 +30,38 @@ const About = () => {
           <img src={ profilePhoto } alt="My Image" className="w-full max-w-xs h-auto rounded-full object-cover" />
         </div>
       </div>
+
+      <hr className='border-slate-200 mt-10'/>
+
+      <div className="flex flex-wrap justify-between gap-10 my-10 ">
+        {/* Misión Section */}
+        <div className="flex-1 flex flex-col items-start">
+          <h3 className="subhead-text">
+            Mis<span className='blue-gradient_text font-semibold drop-shadow-sm'>ión</span>
+          </h3>
+          <p className="text-left mt-4 text-slate-500">
+            Resolver problemas y agilizar procesos con tecnología, mejorando continuamente mis habilidades técnicas y académicas. 
+            Aspiro a ser ingeniero de software especializado en inteligencia artificial para ofrecer soluciones web que 
+            faciliten la vida cotidiana y apoyar a mi familia, siempre enfocándome en la mejora continua y 
+            aplicando mis conocimientos en desarrollo backend.
+          </p>
+        </div>
+
+        {/* Visión Section */}
+        <div className="flex-1 flex flex-col items-end">
+          <h3 className="subhead-text">
+            <span className='blue-gradient_text font-semibold drop-shadow-sm'>Vis</span>ión
+
+            </h3>
+          <p className="text-right mt-4 text-slate-500">
+            Aspiro a crecer como desarrollador senior en inteligencia artificial y fundar un negocio tecnológico para ofrecer 
+            soluciones innovadoras. Mi meta es mejorar sistemas y estrategias en su empresa, perfeccionar mi comunicación con 
+            los clientes, y asegurar que mis soluciones sean accesibles y tengan un impacto positivo.
+          </p>
+        </div>
+      </div>
+
+      <hr className='border-slate-200 mt-10'/>
 
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text'>Habilidades</h3>
@@ -51,6 +82,8 @@ const About = () => {
           ))}
         </div>
       </div>
+
+      <hr className='border-slate-200 mt-10'/>
 
       <div className='py-16'>
           <h3 className='subhead-text'>Experiencia</h3>
@@ -104,26 +137,27 @@ const About = () => {
           </div>
       </div>
 
+
       <div className="mt-2 flex flex-col items-center text-slate-600">
-      <h2 className="text-xl font-semibold mb-5">Contact <span className='blue-gradient_text font-semibold drop-shadow-sm'>
-      Information</span></h2>
+        <h2 className="text-xl font-semibold mb-5">Contact <span className='blue-gradient_text font-semibold drop-shadow-sm'>
+        Information</span></h2>
       
-      <div className="flex flex-col gap-3">
-        <a href="https://www.linkedin.com/in/juan-contreras-265317257/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-600 transition-colors duration-300">
-          <FaLinkedin className="text-2xl" />
-          <span className="text-lg">linkedin.com/in/Juan-Contreras</span>
-        </a>
-        
-        <a href="https://github.com/Mizamarzes" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gray-800 transition-colors duration-300">
-          <FaGithub className="text-2xl" />
-          <span className="text-lg">github.com/Mizamarzes</span>
-        </a>
-        
-        <a href="mailto:mizamarzes@gmail.com" className="flex items-center gap-2 hover:text-red-600 transition-colors duration-300">
-          <FaEnvelope className="text-2xl" />
-          <span className="text-lg">mizamarzes@gmail.com</span>
-        </a>
-      </div>
+        <div className="flex flex-col gap-3">
+          <a href="https://www.linkedin.com/in/juan-contreras-265317257/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-600 transition-colors duration-300">
+            <FaLinkedin className="text-2xl" />
+            <span className="text-lg">linkedin.com/in/Juan-Contreras</span>
+          </a>
+          
+          <a href="https://github.com/Mizamarzes" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gray-800 transition-colors duration-300">
+            <FaGithub className="text-2xl" />
+            <span className="text-lg">github.com/Mizamarzes</span>
+          </a>
+          
+          <a href="mailto:mizamarzes@gmail.com" className="flex items-center gap-2 hover:text-red-600 transition-colors duration-300">
+            <FaEnvelope className="text-2xl" />
+            <span className="text-lg">mizamarzes@gmail.com</span>
+          </a>
+        </div>
     </div>
 
       <hr className='border-slate-200 mt-10'/>
