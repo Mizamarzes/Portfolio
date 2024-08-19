@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <section className='max-container'>
       <h1 className='head-text'>
-        My <span className='blue-gradient_text font-semibold drop-shadow-sm'>
-        Projects</span>
+        Mis <span className='blue-gradient_text font-semibold drop-shadow-sm'>
+        Projectos</span>
       </h1>
 
       <div className='flex flex-wrap my-20 gap-16'>

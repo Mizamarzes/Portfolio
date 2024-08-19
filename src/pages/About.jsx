@@ -6,6 +6,8 @@ import CTA from '../components/CTA';
 
 import profilePhoto from '../assets/images/profile_photo.png';
 
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+
 const About = () => {
   return (
     <section className='max-container'>
@@ -28,10 +30,10 @@ const About = () => {
         <div className="flex justify-center items-center flex-1">
           <img src={ profilePhoto } alt="My Image" className="w-full max-w-xs h-auto rounded-full object-cover" />
         </div>
-    </div>
+      </div>
 
       <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>My Skills</h3>
+        <h3 className='subhead-text'>Habilidades</h3>
 
         <div className='mt-16 flex flex-wrap gap-12'>
           {skills.map((skill) => (
@@ -51,7 +53,7 @@ const About = () => {
       </div>
 
       <div className='py-16'>
-          <h3 className='subhead-text'>Work Experience</h3>
+          <h3 className='subhead-text'>Experiencia</h3>
         
           <div className='mt-12 flex'>
             <VerticalTimeline>
@@ -102,7 +104,29 @@ const About = () => {
           </div>
       </div>
 
-      <hr className='border-slate-200'/>
+      <div className="mt-2 flex flex-col items-center text-slate-600">
+      <h2 className="text-xl font-semibold mb-5">Contact <span className='blue-gradient_text font-semibold drop-shadow-sm'>
+      Information</span></h2>
+      
+      <div className="flex flex-col gap-3">
+        <a href="https://www.linkedin.com/in/juan-contreras-265317257/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-600 transition-colors duration-300">
+          <FaLinkedin className="text-2xl" />
+          <span className="text-lg">linkedin.com/in/Juan-Contreras</span>
+        </a>
+        
+        <a href="https://github.com/Mizamarzes" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-gray-800 transition-colors duration-300">
+          <FaGithub className="text-2xl" />
+          <span className="text-lg">github.com/Mizamarzes</span>
+        </a>
+        
+        <a href="mailto:mizamarzes@gmail.com" className="flex items-center gap-2 hover:text-red-600 transition-colors duration-300">
+          <FaEnvelope className="text-2xl" />
+          <span className="text-lg">mizamarzes@gmail.com</span>
+        </a>
+      </div>
+    </div>
+
+      <hr className='border-slate-200 mt-10'/>
 
       <CTA />
     </section>

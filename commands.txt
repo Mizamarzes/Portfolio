@@ -14,6 +14,7 @@ npm install @react-three/drei
 npm install @react-spring/three
 npm install @emailjs/browser
 npm install react-vertical-timeline-component
+npm install react-icons
 
 -- EXTENSIONS
 
