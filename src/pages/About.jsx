@@ -1,7 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { skills, experiences } from '../constants';
+import { skills, experiences, certificates } from '../constants';
 import CTA from '../components/CTA';
 
 import profilePhoto from '../assets/images/profile_photo.png';
@@ -64,7 +64,10 @@ const About = () => {
       <hr className='border-slate-200 mt-10'/>
 
       <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>Habilidades</h3>
+        <h3 className='subhead-text'>Habilidades y Servicios</h3>
+        <p className="text-left mt-4 text-slate-500">
+            Descubre los lenguajes de programacion que domino y los servicios que puedo ofrecer.
+          </p>
 
         <div className='mt-16 flex flex-wrap gap-12'>
           {skills.map((skill) => (
@@ -137,8 +140,39 @@ const About = () => {
           </div>
       </div>
 
+      <hr className='border-slate-200 mt-2'/>
+      
+      <h3 className='subhead-text mt-10'>Certificados</h3>
 
-      <div className="mt-2 flex flex-col items-center text-slate-600">
+      <div className='flex flex-wrap my-6 gap-16'>
+        
+        {certificates.map((certificate, index) => (
+          <div className="lg:w-[400px] w-full" key={index}>
+        
+            <div className="mt-2 flex flex-col">
+              <h4 className="text-xl font-poppins font-semibold">
+                {certificate.title}
+              </h4>
+              <p className="mt-2 text-x text-slate-500">
+                {certificate.company_name}
+              </p>
+              <p className="mt-2 text-x text-slate-500">
+                {certificate.date}
+              </p>
+            </div>
+
+            <div className="block-container w-full h-full mt-3">
+              <img
+                src={certificate.certificate}
+                alt={`Certificate ${index + 1}`}
+                className="w-full h-auto object-contain rounded-xl"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-10 flex flex-col items-center text-slate-600">
         <h2 className="text-xl font-semibold mb-5">Contact <span className='blue-gradient_text font-semibold drop-shadow-sm'>
         Information</span></h2>
       

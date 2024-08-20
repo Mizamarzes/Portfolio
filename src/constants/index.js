@@ -1,7 +1,9 @@
 import { 
     this_dev,
     facialrecogGif,
-    crmGif
+    crmGif,
+    diploma_comfenalco,
+    diploma_platzi_ing_soft
 } from "../assets/images";
 
 import {
@@ -80,6 +82,21 @@ export const skills = [
         type: "Version Control",
     },
 ];
+
+export const certificates = [
+    {
+        title: "Diplomado Fundamentos Basicos de PHP, CSS y HTML",
+        company_name: "Fundacion Universitaria Comfenalco Santander",
+        certificate: diploma_comfenalco,
+        date: "17 de Mayo de 2023",
+    },
+    {
+        title: "Fundamentos de Ingeneria de Software",
+        company_name: "Platzi",
+        certificate: diploma_platzi_ing_soft,
+        date: "8 de Junio de 2023",
+    },
+]
 
 export const experiences = [
     {
