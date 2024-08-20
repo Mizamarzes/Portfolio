@@ -3,7 +3,8 @@ import {
     facialrecogGif,
     crmGif,
     diploma_comfenalco,
-    diploma_platzi_ing_soft
+    diploma_platzi_ing_soft,
+    campus_logo
 } from "../assets/images";
 
 import {
@@ -101,10 +102,23 @@ export const certificates = [
 export const experiences = [
     {
         title: "Backend Developer",
+        company_name: "Campuslands",
+        icon: campus_logo,
+        iconBg: "#418af3",
+        date: "Noviembre 2023 - Septiembre 2024",
+        points: [
+            "Creé y gestione aplicaciones web completas con tecnologias Frontend como HTML, CSS y JavaScript",
+            "Desarrolle proyectos utilizando Git para control de versiones y metodologias agiles como SCRUM para el trabajo en equipo.",
+            "Aprendi y aplique tecnologias de backend como Java y Spring Boot, bases de datos como MySQL y PostGreSQL.",
+            "Desarrolle mis habilidades blandas y el uso de una segunda lengua como Ingles que me ayudaron a completar mis tareas con exito.",
+        ],
+    },
+    {
+        title: "Backend Developer",
         company_name: "this.dev",
         icon: this_dev,
         iconBg: "#f59580",
-        date: "dic 2023",
+        date: "diciembre 2023 - Septiembre 2024",
         points: [
             "Formé parte de una iniciativa colaborativa junto a cuatro programadores, donde el objetivo principal fue desarrollar proyectos con un impacto empresarial significativo..",
             "Como desarrollador backend, me enfoqué en el mantenimiento y creación de bases de datos, garantizando la integridad y eficiencia de la información almacenada.",
@@ -112,6 +126,7 @@ export const experiences = [
             "El trabajo en equipo fue clave para el éxito de estos proyectos, permitiendo un avance constante y asegurando que cada miembro contribuyera con sus fortalezas.",
         ],
     },
+    
 ];
 
 export const projects = [
