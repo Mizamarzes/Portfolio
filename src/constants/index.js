@@ -23,7 +23,9 @@ import {
     facialrecog,
     plane,
     university,
-    restaurant
+    restaurant,
+    react,
+    tailwind
 } from "../assets/icons";
 
 export const skills = [
@@ -58,13 +60,23 @@ export const skills = [
         type: "Backend",
     },
     {
-        imageUrl: linux,
-        name: "Linux",
-        type: "Kernel",
+        imageUrl: react,
+        name: "Reach",
+        type: "Frontend",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Backend",
     },
     {
         imageUrl: css,
         name: "CSS",
+        type: "Frontend",
+    },
+    {
+        imageUrl: tailwind,
+        name: "Tailwind css",
         type: "Frontend",
     },
     {

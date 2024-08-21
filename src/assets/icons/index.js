@@ -17,6 +17,8 @@ import facialrecog from './facial_recognition.svg'
 import plane from './plane.svg'
 import university from './university.svg'
 import restaurant from './restaurant.svg'
+import react from './react.svg'
+import tailwind from './tailwind.svg'
 
 export {
     css,
@@ -37,5 +39,7 @@ export {
     facialrecog,
     plane,
     university,
-    restaurant
+    restaurant,
+    react,
+    tailwind
 }
